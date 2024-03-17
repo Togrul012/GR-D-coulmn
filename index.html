@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* background-color: khaki; */
+            /* padding: 10px;
+            gap: 10px; */
+            height: 100%;
+        }
+
+        .item {
+            /* background-color: lime; */
+            border: 1px solid white;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .item4 {
+            background-image: url(bmw4.jpg);
+            height: 220px;
+            width: 220px;
+            color: blue;
+        }
+
+        /* .item1{
+            grid-column-start: 1;
+            grid-column-end: 3; 
+            grid-row-start: 1;
+            grid-row-end: 4;
+        } */
+        .item5 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-end: 4;
+            grid-row-start: 2;
+        }
+
+        .item6 {
+            background-image: url(nfs.ico);
+            width: 215px;
+            height: 215px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="item item1">NFS MOST WANTED</div>
+        <div class="item item2">
+            SEARCH... <input type="search">
+        </div>
+        <div class="item item3">EA RACING</div>
+        <div class="item item4"></div>
+        <div class="item item5">İlk oyun, The Need for Speed , 1994-cü ildə buraxıldı . Seriyadakı oyunlar beşincidən
+            səkkizinci daxil olmaqla dörd nəsil oyun sistemlərində təqdim olunur. Need for Speed ​​oyunlarının əsas
+            komponenti müxtəlif yollarda müxtəlif avtomobillərdə yarışmaq və bəzən polis təqibləridir. Need for Speed:
+            High Stakes oyunundan bəri seriyada oyuna inteqrasiya olunmuş avtomobil tüninqi var.Need for Speed
+            ​​​​dünyanın ən uğurlu yarış video oyunları seriyasıdır və bütün zamanların ən uğurlu oyun mediası
+            franchiselərindən biridir. 2009-cu ilin oktyabr ayına olan məlumata görə, seriyadakı oyunlar 140 milyon
+            nüsxədən çox satılmışdır.
+
+            2012-ci ilin iyun ayında Criterion Games-in EA-nın Qara Qutunun yenidən qurulmasından sonra Need for Speed
+            ​​media franşizasına tam nəzarət etdiyi elan edildi . 2013-cü ilin avqustunda Ghost Games, eləcə də
+            Criterion Games tərtibatçıları yaxın gələcək üçün birləşdilər.Lakin həmin ilin noyabrında Need for
+            Speed-in EA Sports-un nəzarətinə keçdiyi məlum oldu. O da məlum oldu ki, Electronic Arts media
+            franchise üçün yarış məsləhətçisi olacaq yarışçı Ken Block ilə çoxillik əməkdaşlıq müqaviləsi bağlayıb.
+        </div>
+        <div class="item item6"></div>
+        <div class="item item7">NFS SHIFT</div>
+        <div class="item item8"></div>
+    </div>
+
+</body>
+
+</html>
